@@ -15,8 +15,8 @@ import {
     profilePhotoUploadSignedURL,
     getAllUsers,
     updatePassword
- } from "../Controllers/user.controller.mjs";
-import { verifyJWT } from "../Middlewares/auth.middleware.mjs";
+ } from "../Controllers/user.controller.js";
+import { verifyJWT } from "../Middlewares/auth.middleware.js";
 
 const router = Router();
 

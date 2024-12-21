@@ -17,15 +17,15 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // user route
-import userRouter from "./Routes/user.routes.mjs"
+import userRouter from "./Routes/user.routes.js"
 app.use("/api/v1/auth", userRouter);
 
 // patient route
-import patientRouter from "./Routes/patient.routes.mjs"
+import patientRouter from "./Routes/patient.routes.js"
 app.use("/api/v1/patient", patientRouter);
 
 // doctor route
-import doctorRouter from "./Routes/doctor.routes.mjs"
+import doctorRouter from "./Routes/doctor.routes.js"
 app.use("/api/v1/doctor", doctorRouter);
 
 export {app}

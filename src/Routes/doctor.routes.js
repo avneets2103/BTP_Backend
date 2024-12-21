@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import { verifyJWT } from "../Middlewares/auth.middleware.mjs";
-import { addMedicine, doctorChat, emptyMedicineList, generatePatientCode, getPatientList, getPatientMedical, removeMedicine, removePatient, saveDoctorNote } from "../Controllers/doctor.controller.mjs";
+import { verifyJWT } from "../Middlewares/auth.middleware.js";
+import { addMedicine, doctorChat, emptyMedicineList, generatePatientCode, getPatientList, getPatientMedical, removeMedicine, removePatient, saveDoctorNote } from "../Controllers/doctor.controller.js";
 
 const router = Router();
 

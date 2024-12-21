@@ -1,12 +1,12 @@
-import { asyncHandler } from "../Utils/asyncHandler.mjs";
-import ApiError from "../Utils/ApiError.mjs";
-import ApiResponse from "../Utils/ApiResponse.mjs";
-import { User } from "../Models/user.model.mjs";
-import { Patient } from "../Models/patient.model.mjs";
-import { Doctor } from "../Models/doctor.model.mjs";
+import { asyncHandler } from "../Utils/asyncHandler.js";
+import ApiError from "../Utils/ApiError.js";
+import ApiResponse from "../Utils/ApiResponse.js";
+import { User } from "../Models/user.model.js";
+import { Patient } from "../Models/patient.model.js";
+import { Doctor } from "../Models/doctor.model.js";
 import jwt from "jsonwebtoken";
-import { sendingMail } from "../Utils/messagingService.mjs";
-import { getObjectURL } from "../Utils/s3.mjs";
+import { sendingMail } from "../Utils/messagingService.js";
+import { getObjectURL } from "../Utils/s3.js";
 import axios from "axios";
 
 const generateDoctorToken = async (doctor, patient) => {

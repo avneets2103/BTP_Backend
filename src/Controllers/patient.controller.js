@@ -1,12 +1,12 @@
-import { asyncHandler } from "../Utils/asyncHandler.mjs";
-import ApiError from "../Utils/ApiError.mjs";
-import ApiResponse from "../Utils/ApiResponse.mjs";
-import { User } from "../Models/user.model.mjs"; // Ensure correct import paths
-import { Patient } from "../Models/patient.model.mjs";
-import { Doctor } from "../Models/doctor.model.mjs";
+import { asyncHandler } from "../Utils/asyncHandler.js";
+import ApiError from "../Utils/ApiError.js";
+import ApiResponse from "../Utils/ApiResponse.js";
+import { User } from "../Models/user.model.js"; // Ensure correct import paths
+import { Patient } from "../Models/patient.model.js";
+import { Doctor } from "../Models/doctor.model.js";
 import jwt from "jsonwebtoken";
-import { extractTextFromPDF, getObjectURL, putObjectURL } from "../Utils/s3.mjs";
-import { makeUniqueFileName } from "../Utils/helpers.mjs";
+import { extractTextFromPDF, getObjectURL, putObjectURL } from "../Utils/s3.js";
+import { makeUniqueFileName } from "../Utils/helpers.js";
 import axios from "axios";
 
 const getDoctorList = asyncHandler(async (req, res) => {
